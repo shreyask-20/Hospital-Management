@@ -41,7 +41,7 @@ const Sidebar = () => {
         ))}
       </ul>
 
-      {/* Settings and Logout menu items */}
+     
       <ul className="menu">
         <li className="menu-item" onClick={() => setActiveMenu("Settings")}>
           <FaCogs />
