@@ -1,0 +1,144 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    right: 1%;
+    top: 0;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 320px;
+    height: 40px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #2ec4b6;
+    margin-left: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.icon {
+    font-size: 18px;
+    color: #333;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 60px;
+}
+
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.admin-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.admin-role {
+    font-size: 12px;
+    color: #777;
+}
+.notification-dropdown {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+ /* Pehle right: 0; tha, ab -20px kiya taaki left aaye */
+    width: 220px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in-out;
+    z-index: 1000;
+  }
+  
+  
+  .notification-header {
+    background: #2EC4B6;
+    color: white;
+    padding: 8px 12px; /* Pehle 12px tha, ab 8px */
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px; /* Pehle 16px tha, ab 14px */
+  }
+  
+  .notification-item {
+    padding: 8px 10px; /* Pehle 12px tha, ab 8px */
+    font-size: 12px; /* Pehle 14px tha, ab 12px */
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Pehle 10px tha, ab 6px */
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .notification-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .notification-icon {
+    background: #2EC4B6;
+    color: white;
+    padding: 5px; /* Pehle 8px tha, ab 5px */
+    border-radius: 50%;
+    font-size: 10px; /* Pehle 12px tha, ab 10px */
+    width: 20px; /* Pehle 24px tha, ab 20px */
+    height: 20px; /* Pehle 24px tha, ab 20px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .no-notifications {
+    padding: 8px;
+    text-align: center;
+    font-size: 12px; /* Pehle 14px tha, ab 12px */
+    color: gray;
+  }
+  
