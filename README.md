@@ -1,5 +1,4 @@
-Install node modules - npi i / np
-
+Install node modules - npm i / npm i --force
 
 Tejas:
 Frontend - side bar and nav barcompleted with micro interactions and responsiveness.
