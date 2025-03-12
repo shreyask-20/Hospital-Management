@@ -1,9 +1,10 @@
 const roles = {
   admin: [
     { name: "Dashboard", path: "/dashboard" },
-    { name: "Patient Management", path: "/patient-management" },
+    { name: "Patient", path: "/patient-management" },
+    { name: "Doctors", path: "/doctors-management" },
     { name: "Appointments", path: "/appointments" },
-    { name: "Billing", path: "/billing" },
+    { name: "Pharmacy", path: "/pharmacy" },
     { name: "Profile Settings", path: "/profile-settings" },
     { name: "Logout", path: "/logout" },
   ],
