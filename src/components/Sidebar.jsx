@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { FaHome, FaCogs } from "react-icons/fa";
 import { FaUserGroup } from "react-icons/fa6";
 import { GiMedicines } from "react-icons/gi";
@@ -8,15 +9,22 @@ import { FaSignOutAlt } from "react-icons/fa";
 import "./Sidebar.css";
 
 const Sidebar = () => {
+  const navigate = useNavigate(); // Initialize navigate
   const menuItems = [
     { name: "Dashboard", icon: <FaHome />, route: "/" },
     { name: "Doctors", icon: <FaUserDoctor />, route: "/doctors" },
     { name: "Appointments", icon: <MdCalendarMonth />, route: "/appointment" },
     { name: "Patients", icon: <FaUserGroup />, route: "/patients" },
     { name: "Pharmacy", icon: <GiMedicines />, route: "/pharmacy" },
+    { name: "Recents", icon: <MdCalendarMonth />, route: "/recents" }, // Route for Recents
   ];
 
   const [activeMenu, setActiveMenu] = useState(menuItems[0].name);
+
+  const handleMenuClick = (menu) => {
+    setActiveMenu(menu.name);
+    navigate(menu.route); // Navigate to the route
+  };
 
   const handleLogout = () => {
     console.log("Logging out...");
@@ -33,7 +41,7 @@ const Sidebar = () => {
           <li
             key={item.name}
             className={`menu-item ${activeMenu === item.name ? "active" : ""}`}
-            onClick={() => setActiveMenu(item.name)}
+            onClick={() => handleMenuClick(item)} // Call handleMenuClick
           >
             {item.icon}
             <span className="menu-text">{item.name}</span>
@@ -41,7 +49,6 @@ const Sidebar = () => {
         ))}
       </ul>
 
-     
       <ul className="menu">
         <li className="menu-item" onClick={() => setActiveMenu("Settings")}>
           <FaCogs />

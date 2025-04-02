@@ -1,0 +1,33 @@
+.recents {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.recents h1 {
+  font-size: 50px;
+  margin-bottom: 45px;
+  color: black;
+}
+
+.recents-category h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #007bff; /* Set a different color for headings */
+}
+
+.recents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recents li {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  color: black;
+}
+
+.recents .timestamp {
+  float: right;
+  color: #888;
+  font-size: 14px;
+}
