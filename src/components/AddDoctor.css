@@ -1,0 +1,46 @@
+.add-doctor-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .add-doctor-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .add-doctor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-doctor-form input {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    background-color: #007bff; /* Set background color to blue */
+    color: white; /* Set text color to white */
+  }
+  
+  .add-doctor-form input::placeholder {
+    color: #e0e0e0; /* Set placeholder text color to light gray */
+  }
+  
+  .add-doctor-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-doctor-form button:hover {
+    background-color: #0056b3;
+  }
